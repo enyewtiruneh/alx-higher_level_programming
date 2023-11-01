@@ -1,13 +1,7 @@
 #!/usr/bin/python3
-def to_uper(character):
-    if ord(character) >= 97 and ord(character) <= 122:
-        return (ord(character) - 32)
-    else:
-        return ord(character)
+# 9-print_last_digit.py
 
-
-def uppercase(str):
-    new = ""
-    for character in str:
-        new += "%c" % to_uper(character)
-    print("{:s}".format(new))
+def print_last_digit(number):
+    """Print the last digit of a number and return it."""
+    print(abs(number) % 10, end="")
+    return (abs(number) % 10)
